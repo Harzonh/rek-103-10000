@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Baskets?</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    /* Reset and Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #333;
+      background-color: #fafafa;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header and Navigation */
+    header {
+      background-color: #101820;
+      padding: 20px 0;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      color: #fff;
+      font-weight: 600;
+      font-size: 24px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+
+    .nav-links li a:hover {
+      background-color: #f2aa4c;
+      color: #101820;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      background: linear-gradient(135deg, #f2aa4c, #f4e3c1);
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .hero-section h2 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .hero-section p {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .btn-primary {
+      padding: 12px 25px;
+      background-color: #101820;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+
+    .btn-primary:hover {
+      background-color: #f2aa4c;
+      color: #101820;
+    }
+
+    /* Section Styling */
+    .section {
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    /* Products */
+    .product-grid {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .product-card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 280px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    /* Contact Form */
+    .contact-section form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 500px;
+      margin: 0 auto;
+      gap: 15px;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    form textarea {
+      resize: vertical;
+      height: 120px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #101820;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav-container">
+      <h1 class="logo">Baskets?</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero-section">
+    <div class="container">
+      <h2>Welcome to Baskets?</h2>
+      <p>Your destination for stylish, curated products.</p>
+      <a href="#products" class="btn-primary">Browse Products</a>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>At Baskets?, we believe in quality, design, and delivering products that enhance your lifestyle. Explore our handpicked collection today.</p>
+    </div>
+  </section>
+
+  <section id="products" class="section">
+    <div class="container">
+      <h2>Our Products</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="basket1.jpg" alt="Product 1"/>
+          <h3>Product 1</h3>
+          <p>₱200.00</p>
+        </div>
+        <div class="product-card">
+          <img src="basket2.jpg" alt="Product 2"/>
+          <h3>Product 2</h3>
+          <p>₱500.00</p>
+        </div>
+        <div class="product-card">
+          <img src="basket3.jpg" alt="Product 3"/>
+          <h3>Product 3</h3>
+          <p>₱400.00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required/>
+        <input type="email" placeholder="Your Email" required/>
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit" class="btn-primary">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 ModernShop. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
